@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Rockin' Page</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="jquery-1.10.2.js"></script>	
+		<script type="text/javascript" src="basic.js"></script>	
+        <script>
+		var counter = 0;
+var poll = function() {
+$ = jQuery;
+  $.getJSON('/poll/'+counter, function(response) {
+     counter = response.count;
+     var elem = $('#output');
+     elem.text(elem.text() + response.append);
+     poll();
+  });
+}
+poll();
+        </script>
+        </head>
+	<body>
+		<p>This is a page. For realz, yo.</p>
+		 <input id="clickMe" type="button" value="clickme" onclick="nehaberkoc();" />
+		  <input id="clickMe2" type="button" value="clickme2" onclick="getIlceyeBagliBelde(1);" />
+		  <textarea id="output" style="width: 50%; height: 50%;">
+ </textarea>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <META http-equiv=content-type content=text/html;charset=iso-8859-9>
+    <META http-equiv=content-type content=text/html;charset=windows-1254>
+    <META http-equiv=content-type content=text/html;charset=x-mac-turkish>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>İller</title>
+    <script src="cordova-2.2.0.js"></script>
+    <script>
+          function onLoad()
+          {
+              document.addEventListener("deviceready",onDeviceReady, true);
+          }
+          function onDeviceReady()
+          {
+               navigator.notification.alert("PhoneGap is working!!");
+          }
+    </script>
+  </head>
+  <body onload="onLoad();">
+     <center>
+     <table width="330" border="0">
+     <tr>
+     <td height="520" background="C:\Users\muzeyyen\workspace\Secim\assets\www\img\background.jpg">
+     <form name="form" method="post" action="">
+     <center>
+         <button class="btnIller" onclick="self.open('file:///C:/Users/muzeyyen/workspace/Secim/assets/www/ilceler.html') ">Adana</button><BR>
+         <button class="btnIller">Adıyaman</button><br>
+         <button class="btnIller">Afyon</button><BR>
+         <button class="btnIller">Ağrı</button><BR>
+         <button class="btnIller">Amasya</button><BR>
+         <button class="btnIller">Ankara</button><BR>
+         <button class="btnIller">Antalya</button>
+         <img margin:500px border=0 height='50' width='330' src="C:\Users\muzeyyen\workspace\Secim\assets\www\img\asagi.jpg">
+     </center>      
+     </form>
+     </td>
+     </tr>
+     </table> 
+     </center>
+  </body>
+</html>

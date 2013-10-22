@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ 
+  <title>Secim Ornek</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<script src="Marq_Msg.js"></script>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+var result = scroll_messages();
+document.write ( "Result = " + result);
+</script>
+<input type="button" onclick="document.write(hello())" ></input>
+
+<input type="button" onclick="document.write(scroll_messages())" ></input>
+
+    <div id="logo">
+        <marquee scrollamount="5" direction="left" loop="true" height="100%" width="100%">
+        <strong><font color="white"><script src="Marq_Msg.js"></script>
+<script>
+    hello();
+</script></font></strong>
+        </marquee>
+    </div>
+</html>
+
+

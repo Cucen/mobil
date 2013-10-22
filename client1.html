@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <title>Untitled 4</title>
+ <script src="http://localhost:8080/socket.io/socket.io.js"> </script>
+<script>
+  var socket = io.connect('http://localhost:8080');
+  socket.on('connect', function () {
+    console.log('We are connected!');
+var name = prompt('What is your name?');
+this.emit('set namename', name, function (success) {
+console.log('The server got the message!');
+
+if (!success) {
+console.log('Nickname is in use!');
+}
+});
+});
+</script>
+</head>
+<body>
+
+</body>
+</html>

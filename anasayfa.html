@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <META http-equiv=content-type content=text/html;charset=iso-8859-9>
+    <META http-equiv=content-type content=text/html;charset=windows-1254>
+    <META http-equiv=content-type content=text/html;charset=x-mac-turkish>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Anasayfa</title>
+    <script src="cordova-2.2.0.js"></script>
+    <script>
+          function onLoad()
+          {
+              document.addEventListener("deviceready",onDeviceReady, true);
+          }
+          function onDeviceReady()
+          {
+               navigator.notification.alert("PhoneGap is working!!");
+          }
+    </script>
+  </head>
+  <body onload="onLoad();">
+     <center>
+     <table width="330" border="0">
+     <tr>
+     <td height="520" background="C:\Users\muzeyyen\workspace\Secim\assets\www\img\background.jpg">
+     <form name="form" method="post" action="">
+     <br /><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+     <center>
+         <button class="btnAdaylar" onclick="self.open('file:///C:/Users/muzeyyen/workspace/Secim/assets/www/iller.html') ">ADAYLAR</button><BR>
+         <button class="btnAdayAdaylari" onclick="self.open('file:///C:/Users/muzeyyen/workspace/Secim/assets/www/iller.html') ">ADAY ADAYLARI</button><br><BR><BR>
+         <img margin:500px border=0 height='30' width='110' src="C:\Users\muzeyyen\workspace\Secim\assets\www\img\face.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <img margin:300px border=0 height='30' width='110' src="C:\Users\muzeyyen\workspace\Secim\assets\www\img\twitter_paylas.jpg">  
+     </center>
+     </form>
+     </td>
+     </tr>
+     </table>
+     </center>
+</body>
+</html>
